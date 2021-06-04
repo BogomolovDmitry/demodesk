@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.humanize',
-    'bootstrapform',
-    'crispy_forms',
+    'bootstrap4form',
+
     'account',  # Required by pinax-teams
     'pinax.invitations',  # required by pinax-teams
     'pinax.teams',  # team support
