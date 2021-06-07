@@ -125,6 +125,17 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'Service-Desk',
+#         'USER': 'master',
+#         'PASSWORD': 'WinD1997',
+#         'HOST': '127.0.0.1:',
+#         'PORT': '2581',
+#     }
+# }
+
 
 # Sites
 # - this allows hosting of more than one site from a single server,
@@ -171,9 +182,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # This demo uses the console backend, which simply prints emails to the console
 # rather than actually sending them out.
-DEFAULT_FROM_EMAIL = 'helpdesk@example.com'
-SERVER_EMAIL = 'helpdesk@example.com'
+#DEFAULT_FROM_EMAIL = 'helpdesk@example.com'
+#SERVER_EMAIL = 'helpdesk@example.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'dmitr79@gmail.com'
+EMAIL_HOST_PASSWORD = 'WinD1997'
 
 # If you want to test sending real emails, uncomment and modify the following:
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
