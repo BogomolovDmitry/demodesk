@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="C:\Users\Dmitry\Documents\GitHub\django-helpdesk-master (1)\django-helpdesk-master\demo\demodesk\fixtures\demo.json">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\demodesk\settings.py">
           <value>
             <Attribute>
