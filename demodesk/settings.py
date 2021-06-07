@@ -118,24 +118,23 @@ LOGIN_REDIRECT_URL = 'helpdesk:home'
 #   configure MySQL or PostgreSQL, see the docs for more:
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'Service-Desk',
-#         'USER': 'master',
-#         'PASSWORD': 'WinD1997',
-#         'HOST': '127.0.0.1:',
-#         'PORT': '2581',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'Service-Desk',
+        'USER': 'postgres',
+        'PASSWORD': 'WinD1997',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
 # Sites
 # - this allows hosting of more than one site from a single server,
